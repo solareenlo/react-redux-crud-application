@@ -25,7 +25,7 @@ const User = (props) => {
 
 User.propTypes = {
   name: PropTypes.string,
-  age: PropTypes.number
+  age: PropTypes.number.isRequired
 }
 
 export default App;
