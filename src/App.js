@@ -1,27 +1,15 @@
-import React, { Component } from 'react';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <React.Fragment>
-//         <label htmlFor="bar">bar</label>
-//       </React.Fragment>
-//     )
-//   }
-// }
+import React from 'react';
 
 const App = () => {
   return (
     <div>
-      <Cat />
-      <Cat />
-      <Cat />
+      <User name={"Taro"} />
     </div>
   )
 }
 
-const Cat = () => {
-  return <div>Meow!</div>
+const User = (props) => {
+  return <div>Hi, I am {props.name}! </div>
 }
 
 export default App;
