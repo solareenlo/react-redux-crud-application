@@ -4,6 +4,7 @@ const App = () => {
   return (
     <div>
       <User name={"Taro"} age={10} />
+      <User name={"Hanako"} age={20} />
     </div>
   )
 }
