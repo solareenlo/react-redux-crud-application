@@ -11,15 +11,13 @@ class EventsIndex extends Component {
     const props = this.props
     return (
       <React.Fragment>
-        <div>value: { props.value }</div>
-        <button onClick={props.increment}>+1</button>
-        <button onClick={props.decrement}>-1</button>
+        <div>{console.log(props.events)}</div>
       </React.Fragment>
     )
   }
 }
 
-const mapStateToProps = state => ({ })
+const mapStateToProps = state => ({ events: state.events })
 const mapDispatchToProps = ({ readEvents })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventsIndex)
