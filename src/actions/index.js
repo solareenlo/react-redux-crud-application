@@ -1,12 +1,5 @@
-export const INCREMENT = 'INCREMENT'
-export const DECREMENT = 'DECREMENT'
+export const READ_EVENTS = 'READ_EVENTS'
 
-export const increment = () => ({
-  type: INCREMENT
+export const readEvents = () => ({
+  type: READ_EVENTS
 })
-
-export const decrement = () => {
-  return {
-  type: DECREMENT
-  }
-}
