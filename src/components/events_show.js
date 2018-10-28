@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
-import { getEvent, deleteEvents, putEvents } from '../actions';
+import { getEvent, deleteEvents, putEvent } from '../actions';
 
 class EventsShow extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ class EventsShow extends Component {
   }
 
   async onSubmit(values) {
-    //await this.props.postEvents(values)
+    await this.props.putEvent(values)
     this.props.history.push('/')
   }
 
@@ -66,7 +66,7 @@ const mapStateToProps = (state, ownProps) => {
   return { initialValues: event, event }
 }
 
-const mapDispatchToProps = ({ deleteEvents, getEvent })
+const mapDispatchToProps = ({ deleteEvents, getEvent, putEvent })
 
 export default connect(mapStateToProps, mapDispatchToProps)(
   reduxForm({ validate, form: 'eventShowForm', enableReinitialize: true })(EventsShow)
