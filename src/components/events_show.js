@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { getEvent, deleteEvents, putEvent } from '../actions';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
