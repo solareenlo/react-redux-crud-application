@@ -5,7 +5,7 @@ https://react-application-development.firebaseapp.com/
 ## ローカルで動かすには,
 `npm start`  
 か,  
-`yarn start`
+`yarn run start`
 
 ## 教材は,
 https://www.udemy.com/react-application-development/
